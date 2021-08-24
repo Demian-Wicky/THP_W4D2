@@ -75,7 +75,7 @@ require_relative 'lib/humanplayer'
       gets
     end
 
-    puts "Les autres joueurs t'attaquent !"
+    puts "Les autres joueurs t'attaquent !" if (player1.is_alive? || player2.is_alive?)
     enemies.each do |enemy|
       if enemy.is_alive?
       enemy.attacks(humanplayer)
