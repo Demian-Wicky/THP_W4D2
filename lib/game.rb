@@ -43,6 +43,7 @@ class Game
   def show_players
     print humanplayer.show_state
     puts "Il reste #{@enemies.length} enemis".red
+    puts
     # @enemies.each do |enemy|
     #   print enemy.show_state
     # end
